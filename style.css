@@ -7,10 +7,13 @@ body{
     background-color: rgb(231, 238, 219);
   }
   th, td {
+    overflow: hidden;
     font-family: Arial;
-    border: 2px solid rgb(100, 40, 0);
+    border-collapse: collapse;
+    padding: 4px;
     padding-right: 2.5cm;
     padding-left: 0.5cm;
+    border-bottom: solid 1px  rgb(100, 40, 0);
   }
   td{
     color: rgb(85, 84, 84);
@@ -20,6 +23,7 @@ body{
     text-align: center;
     color:white;  
     background-color: rgb(224, 181, 156);
+    border-bottom: solid 1px  rgb(100, 40, 0);
   }
   h1, h2, h3 {
     color:rgb(100, 40, 0);
@@ -27,4 +31,16 @@ body{
     text-decoration: solid;
     text-align: center;
 }
-  
+tbody tr:hover{
+  background-color: rgb(224, 200, 156);
+}
+@keyframes fadein{
+from{
+  opacity: 0;
+}to{
+  opacity: 1;
+}
+}
+#Ejercicio{
+  animation: fadein 2.5s ease-in;
+}
